@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task form</title>
+    <style>
+        .container{
+            background-color: aqua;
+            width: 60%;
+            height: 70%;
+            margin: 0 auto;
+            padding: 25px;
+        }
+        .formcontainer{
+            background-color: bisque;
+            display: flex;
+            flex-direction:column;
+            padding: 20px;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .firstnames{
+            display: flex;
+            background-color: blue;
+            flex-direction: row;
+            gap:10px;
+        }
+        .lastnames * {
+            flex:1;
+            background-color: #ccc;
+        }
+        .password{
+            display: flex;
+            flex-direction: row;
+            gap:10px;
+        }
+        .phone * {
+            flex:1;
+            background-color: blue;
+        }
+        #address{
+            background-color: goldenrod;
+            width: 450px;
+            height: 40px;
+            gap: 10px;
+        }
+        button{
+            width:60px;
+            height:30px;
+            background-color: aqua;
+            border-radius: 10px;
+            align-self: center;
+        }
+        input{
+            border-radius: 5px;
+        }
+        h5{
+            font-size: 30px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="formcontainer">
+            <h4>Get in touch</h4>
+            <div class="names">
+                <form action="">
+                <input type="text" placeholder="firstname">
+                <input type="text" placeholder="lastname">
+            </div><br>
+            <div>
+            <input type="text" placeholder="password">
+            <input type="text" placeholder="phone">
+            </div><br>
+            <input type="text" placeholder="address"id="address">
+            <button onclick="SUBMIT">SUBMIT</button>
+            <h5>thanks for submiting</h5>
+        </div>
+
+        </form> 
+       </div>
+</body>
+</html>
